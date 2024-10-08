@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.contact-page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.contact-page::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/2999001.png");
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.form-header{
+    color: black
+}
+
+.wrapper{
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ffffff80;
+    backdrop-filter: blur(8px);
+    
+}
+
+.form {
+    margin: 20px;
+    position: relative;
+    z-index: 1;
+}
+  
+.form input {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.input-field {
+    position: relative;
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
+}
+
+.input-field input {
+    width: 100%;
+    color: black;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.input-field input::placeholder {
+    color: black;
+}
+
+textarea {
+    width: 100%
+}
+
+.error-container {
+    min-height: 3rem;
+}
+
+.error-text {
+    color: black;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.error-text:empty {
+    visibility: hidden; 
+}
+
+.error-text:not(:empty) {
+    visibility: visible;
+}
+
+.about-me-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.about-me-img {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-me-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.about-me-text {
+    flex: 2;
+    max-width: 500px;
+}
+
+/* Modal overlay background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content box */
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 300px;
+  }
+  
+  .modal-content h2 {
+    margin-top: 0;
+  }
+  
+  .modal-content button {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+
+  
