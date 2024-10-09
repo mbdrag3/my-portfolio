@@ -44,23 +44,37 @@ function Contact() {
 
     };
 
-    const handleFormSubmit = (e) => {
- 
-        e.preventDefault();
+    const handleFormSubmit = async (e) => {
+      e.preventDefault();
     
-        // if (!validateEmail(email) || !userName) {
-        //   setErrorMessage('Email or username is invalid');
-        //   return;
-
-        // }
-        setModalUserName(userName);
-        setIsModalOpen(true);
-
-        // Reset form fields
-        setUserName('');
-        setMessage('');
-        setEmail('');
-      };
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
+      console.log(backendUrl);
+    
+      try {
+        const response = await fetch(`${backendUrl}/send`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email, userName, message }),
+        });
+    
+        if (response.ok) {
+          setModalUserName(userName);
+          setIsModalOpen(true);
+          setUserName('');
+          setMessage('');
+          setEmail('');
+        } else {
+          setErrorMessage('Failed to send message. Please try again.');
+        }
+      } catch (error) {
+        console.error('Error sending message:', error);
+        setErrorMessage('Failed to send message. Please try again.');
+      }
+    };
+    
+      
 
       const closeModal = () => {
         setIsModalOpen(false);
