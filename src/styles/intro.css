@@ -1,0 +1,75 @@
+/* Specific styles for the Intro page to avoid affecting other pages */
+body.intro-page,
+#root.intro-root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent !important; /* Ensures no background color interferes */
+}
+
+/* Full-screen container for the Intro page */
+.intro {
+    position: fixed;              /* Keep the entire intro in place to fill the screen */
+    top: 0;
+    left: 0;
+    display: flex;                /* Use flexbox to center contents */
+    align-items: center;          /* Vertically center items */
+    justify-content: center;      /* Horizontally center items */
+    width: 100%;
+    height: 100vh;                /* Full viewport height */
+    overflow: hidden;
+}
+
+/* Background video that fills the entire viewport */
+.background-video {
+    position: absolute;           /* Keeps video at the back of other content */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;            /* Ensures the video completely covers the background */
+    z-index: -1;                  /* Keeps the video behind other elements */
+}
+
+/* Container for content (Header and Button) in the Intro page */
+.intro-content {
+    position: relative;
+    color: #ffffff;               /* White text for visibility */
+    text-align: center;
+    z-index: 10;                  /* Make sure content stays above the video */
+}
+
+/* Specific styles for header and button within the intro page */
+.intro-content h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.intro-content button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.intro-content button:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker on hover */
+}
+
+/* Circle reveal animation */
+.circle-reveal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #121212; /* Matches background color */
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;                 /* Higher than video and intro-content to ensure it's seen */
+}

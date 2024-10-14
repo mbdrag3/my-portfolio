@@ -1,14 +1,32 @@
-.home-container {
-    position: relative; 
-    padding: 20px;
-    width: 75%;
-    box-sizing: border-box;
+/* Apply black background to the entire viewport on the Home page */
+.home-page, .home-page-root {
+    background-color: #121212; /* Black background */
+    color: white;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Full styling for the Home container */
+.home-container {
+    text-align: center;
+    color: white;
+}
+
+/* Typing cursor effect */
 .cursor {
     font-weight: bold;
     color: #333;
     animation: blink 0.7s steps(1) infinite;
+}
+
+.color-span{
+    color: #7DF9FF
 }
 
 @keyframes blink {
@@ -16,4 +34,3 @@
         opacity: 0;
     }
 }
-

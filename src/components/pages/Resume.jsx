@@ -143,6 +143,7 @@ function Resume() {
                         <h2>Certifications</h2>
                         <ul>
                             <li>University of Miami Coding Bootcamp</li>
+                            <li>NetSuite Suitefoundation</li>
                             <li>CPR/AED</li>
                         </ul>
                         

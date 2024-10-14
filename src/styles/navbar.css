@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #282c34;
+  background-color: #121212;
   padding: 1rem;
   width: 100%;
   position: absolute;
@@ -27,13 +27,13 @@
 }
 
 .navbar a:hover {
-  color: #98FF98;
+  color: #7DF9FF;
 }
 
 .active-link {
   color: white;
   font-weight: bold;
-  border-bottom: 2px solid #98FF98;
+  border-bottom: 2px solid #7DF9FF;
 }
 
 

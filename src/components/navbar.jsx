@@ -8,45 +8,44 @@ function Navbar() {
             <ul>
                 <li>
                     <NavLink 
-                        to="/home" 
+                        to="home"  // Relative path within /app
                         end 
                         className={({ isActive }) => isActive ? "active-link" : undefined}
-                        >
+                    >
                         Home
                     </NavLink>
-
                 </li>
             </ul>
             <ul className="right-links">
                 <li>
                     <NavLink 
-                        to="/Resume" 
+                        to="resume"  // Relative path within /app
                         className={({ isActive }) => isActive ? "active-link" : undefined}
-                        >
+                    >
                         Resume
                     </NavLink>
                 </li>
                 <li>
                     <NavLink 
-                        to="/About" 
+                        to="about"  // Relative path within /app
                         className={({ isActive }) => isActive ? "active-link" : undefined}
-                        >
+                    >
                         About Me
                     </NavLink>
                 </li>
                 <li>
                     <NavLink 
-                        to="/Projects" 
+                        to="projects"  // Relative path within /app
                         className={({ isActive }) => isActive ? "active-link" : undefined}
-                        >
+                    >
                         Projects
                     </NavLink>
                 </li>
                 <li>
                     <NavLink 
-                        to="/Contact" 
+                        to="contact"  // Relative path within /app
                         className={({ isActive }) => isActive ? "active-link" : undefined}
-                        >
+                    >
                         Contact
                     </NavLink>
                 </li>
