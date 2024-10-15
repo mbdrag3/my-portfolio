@@ -168,3 +168,10 @@
 .responsibilities-li {
     text-align: left;
 }
+
+@media screen and (max-width: 768px) {
+    .resume-right {
+        max-width: unset;
+    }
+}
+

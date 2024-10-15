@@ -1,5 +1,6 @@
 .projects-container {
-    padding: 2rem; /* Add padding around the projects container */
+    padding-top: 3rem; /* Add padding around the projects container */
+    padding-bottom: 5rem;
     position: relative; /* Set the container as a relative position for internal positioning */
 }
 

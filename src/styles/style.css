@@ -157,6 +157,13 @@ textarea {
   .modal-content button:hover {
     background-color: #0056b3;
   }
+
+  @media screen and (max-width: 768px) {
+    .about-me-div {
+        flex-direction: column;
+        padding: 4rem;
+    }
+}
   
 
 
