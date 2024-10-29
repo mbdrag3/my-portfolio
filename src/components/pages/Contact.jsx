@@ -84,36 +84,36 @@ function Contact() {
         <div className="container text-center contact-page">
           <form className="form wrapper" onSubmit={handleFormSubmit}>
             <h1 className="form-header">Get in Contact with me</h1>
-            <div className="input-field">
-                    <input
-                        value={email}
-                        name="email"
-                        onChange={handleInputChange}
-                        type="email"
-                        placeholder="email"
-                        required
-                    />
-                </div>
+              <div className="input-field">
+                  <input
+                      value={email}
+                      name="email"
+                      onChange={handleInputChange}
+                      type="email"
+                      placeholder="email"
+                      required
+                  />
+              </div>
 
-                <div className="input-field">
-                    <input
-                        value={userName}
-                        name="userName"
-                        onChange={handleInputChange}
-                        type="text"
-                        placeholder="username"
-                    />
-                </div>
+              <div className="input-field">
+                  <input
+                      value={userName}
+                      name="userName"
+                      onChange={handleInputChange}
+                      type="text"
+                      placeholder="username"
+                  />
+              </div>
 
-                <div className="input-field">
-                    <textarea
-                        value={message}
-                        name="message"
-                        onChange={handleInputChange}
-                        placeholder="Message"
-                        rows="10"
-                    />
-                </div>
+              <div className="input-field">
+                  <textarea
+                      value={message}
+                      name="message"
+                      onChange={handleInputChange}
+                      placeholder="Message"
+                      rows="10"
+                  />
+              </div>
             <button type="submit">Submit</button>
             {errorMessage && (
             <div className="error-container">
