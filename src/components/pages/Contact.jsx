@@ -5,11 +5,11 @@ import { validateEmail } from '../../utils/helpers';
 function Contact() {
 
     const [email, setEmail] = useState('');
-    const [userName, setUserName] = useState('');
+    const [fullName, setfullName] = useState('');
     const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false); // Modal visibility
-    const [modalUserName, setModalUserName] = useState(''); // New state variable
+    const [modalfullName, setModalfullName] = useState(''); // New state variable
 
 
     const handleInputChange = (e) => {
@@ -28,14 +28,14 @@ function Contact() {
         setErrorMessage('')
         return;
         // setEmail(inputValue);
-      } else if (inputType === 'userName') {
+      } else if (inputType === 'fullName') {
         if (target.value.length === 0) {
-            setErrorMessage('Username is empty');
+            setErrorMessage('fullName is empty');
           }
         else {
             setErrorMessage('')
         }
-        setUserName(inputValue);
+        setfullName(inputValue);
         // setErrorMessage('')
         return;
       } else {
@@ -56,13 +56,13 @@ function Contact() {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({ email, userName, message }),
+          body: JSON.stringify({ email, fullName, message }),
         });
     
         if (response.ok) {
-          setModalUserName(userName);
+          setModalfullName(fullName);
           setIsModalOpen(true);
-          setUserName('');
+          setfullName('');
           setMessage('');
           setEmail('');
         } else {
@@ -97,11 +97,11 @@ function Contact() {
 
               <div className="input-field">
                   <input
-                      value={userName}
-                      name="userName"
+                      value={fullName}
+                      name="fullName"
                       onChange={handleInputChange}
                       type="text"
-                      placeholder="username"
+                      placeholder="Full Name"
                   />
               </div>
 
@@ -125,7 +125,7 @@ function Contact() {
           {isModalOpen && (
                 <div className="modal-overlay">
                     <div className="modal-content">
-                        <h2>Hello {modalUserName || "Stranger"}!</h2>
+                        <h2>Hello {modalfullName || "Stranger"}!</h2>
                         <p>Your message has been received.</p>
                         <button onClick={closeModal}>Close</button>
                     </div>
