@@ -90,7 +90,7 @@ function Contact() {
                       name="email"
                       onChange={handleInputChange}
                       type="email"
-                      placeholder="email"
+                      placeholder="Email"
                       required
                   />
               </div>
@@ -110,7 +110,7 @@ function Contact() {
                       value={message}
                       name="message"
                       onChange={handleInputChange}
-                      placeholder="Message"
+                      placeholder="Feel free to write me a message here."
                       rows="10"
                   />
               </div>
