@@ -43,6 +43,14 @@ function Navbar() {
                 </li>
                 <li>
                     <NavLink 
+                        to="recommendations"  // Relative path within /app
+                        className={({ isActive }) => isActive ? "active-link" : undefined}
+                    >
+                        Recommendations
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink 
                         to="contact"  // Relative path within /app
                         className={({ isActive }) => isActive ? "active-link" : undefined}
                     >

@@ -110,7 +110,7 @@ function Contact() {
                       value={message}
                       name="message"
                       onChange={handleInputChange}
-                      placeholder="Feel free to write me a message here."
+                      placeholder ="Feel free to write me a message here."
                       rows="10"
                   />
               </div>
