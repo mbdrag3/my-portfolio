@@ -15,7 +15,8 @@ function Resume() {
                 'Manage NetSuite ERP and HubSpot CRM system administration responsibilities, ensuring optimal functionality and efficiency.',
                 'Create and manage website content including new products, product descriptions, landing pages, and email newsletters.',
                 'Create detailed reports analyzing campaign performance and business operations against set objectives.',
-                'Develop and implement successful digital marketing campaigns to increase brand awareness and customer engagement.'
+                'Develop and implement successful digital marketing campaigns to increase brand awareness and customer engagement.',
+                'Coordinated and managed open projects for a digital marketing team, maintaining detailed notes to track progress and ensure success, while leveraging Trello to organize tasks effectively.'
             ]
         },
         {
@@ -100,7 +101,7 @@ function Resume() {
                         <li>NetSuite</li>
                         <li>WooCommerce</li>
                         <li>Hubspot</li>
-                        <li>Software | Acrobat • Dreamweaver • Github • Photoshop • VS Code</li>
+                        <li>Software | Acrobat • Dreamweaver • Github • Photoshop • VS Code • Trello</li>
                         <li>Microsoft Office</li>
                         <li>Project Management</li>
                         <li>Technical Reporting</li>
@@ -152,7 +153,7 @@ function Resume() {
             </div>
             <div className='resume-footer'>
                 <h1>Click the button here to dowload my resume</h1>
-                <a href="/Drag_resume_general.pdf" download>
+                <a href="/Michael_Drag_Resume_PDF.pdf" download>
                     <button>Download Resume</button>
                 </a>
             </div>

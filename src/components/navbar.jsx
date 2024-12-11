@@ -1,65 +1,108 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import '../styles/navbar.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import { FaBars } from 'react-icons/fa';
+
+import '../styles/navbar.css'; // Your custom CSS
 
 function Navbar() {
-    return (
-        <nav className="navbar">
-            <ul>
-                <li>
-                    <NavLink 
-                        to="home"  // Relative path within /app
-                        end 
-                        className={({ isActive }) => isActive ? "active-link" : undefined}
-                    >
-                        Home
-                    </NavLink>
-                </li>
-            </ul>
-            <ul className="right-links">
-                <li>
-                    <NavLink 
-                        to="resume"  // Relative path within /app
-                        className={({ isActive }) => isActive ? "active-link" : undefined}
-                    >
-                        Resume
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink 
-                        to="about"  // Relative path within /app
-                        className={({ isActive }) => isActive ? "active-link" : undefined}
-                    >
-                        About Me
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink 
-                        to="projects"  // Relative path within /app
-                        className={({ isActive }) => isActive ? "active-link" : undefined}
-                    >
-                        Projects
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink 
-                        to="recommendations"  // Relative path within /app
-                        className={({ isActive }) => isActive ? "active-link" : undefined}
-                    >
-                        Recommendations
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink 
-                        to="contact"  // Relative path within /app
-                        className={({ isActive }) => isActive ? "active-link" : undefined}
-                    >
-                        Contact
-                    </NavLink>
-                </li>
-            </ul>
-        </nav>
-    );
+  const [isOpen, setIsOpen] = useState(false);
+
+  // Toggles the menu open or closed
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  // Closes the menu when a link is clicked
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <NavLink
+        to="home"
+        end
+        className="navbar-brand"
+        onClick={handleLinkClick}
+      >
+        Home
+      </NavLink>
+      <button
+        className="navbar-toggler"
+        type="button"
+        onClick={handleToggle}
+        aria-controls="navbarNav"
+        aria-expanded={isOpen}
+        aria-label="Toggle navigation"
+        >
+        <FaBars color="white" size={24} />
+        </button>
+
+      <div
+        className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`}
+        id="navbarNav"
+      >
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <NavLink
+              to="resume"
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
+              onClick={handleLinkClick}
+            >
+              Resume
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="about"
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
+              onClick={handleLinkClick}
+            >
+              About Me
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="projects"
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
+              onClick={handleLinkClick}
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="recommendations"
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
+              onClick={handleLinkClick}
+            >
+              Recommendations
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="contact"
+              className={({ isActive }) =>
+                isActive ? 'nav-link active' : 'nav-link'
+              }
+              onClick={handleLinkClick}
+            >
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar;

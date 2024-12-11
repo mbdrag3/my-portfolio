@@ -1,47 +1,42 @@
+/* navbar.css */
+
 .navbar {
-  background-color: #121212;
+  background-color: #121212 !important;
   padding: 1rem;
   width: 100%;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   z-index: 1000;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
 }
 
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
+.nav-link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+}
+
+/* Remove padding from nav-item */
+.nav-item {
   padding: 0;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-  color: #7DF9FF;
-}
-
-.active-link {
-  color: white;
+/* Active Link Styling */
+.nav-link.active {
   font-weight: bold;
   border-bottom: 2px solid #7DF9FF;
 }
 
-
-.right-links {
-  display: flex;
-  gap: 1rem;
+/* Hover Effect for Links */
+.nav-link:hover {
+  color: #7DF9FF;
 }
 
-.right-links li {
-  display: inline;
+/* Optional: Adjust positioning if needed */
+.navbar-nav {
+  align-items: center;
 }
+
