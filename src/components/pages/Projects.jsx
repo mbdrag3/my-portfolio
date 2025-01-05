@@ -96,7 +96,7 @@ function Projects() {
                                     <FontAwesomeIcon icon={faGlobe} className="icon" />
                                 </a>
                             ) : (
-                                <a href="/error-page" className="error-link">
+                                <a href="error-page" className="error-link">
                                     <FontAwesomeIcon icon={faGlobe} className="icon" />
                                 </a>
                             )}

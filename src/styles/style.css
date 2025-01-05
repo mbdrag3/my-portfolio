@@ -158,6 +158,35 @@ textarea {
     background-color: #0056b3;
   }
 
+  /* Common styles for textarea */
+textarea {
+    width: 100%;
+    background-color: #f0f0f0;  /* Light gray background */
+    color: black;  /* Black text */
+    border: 1px solid #ccc;  /* Light border */
+    padding: 10px;
+    border-radius: 5px;  /* Rounded corners */
+    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+    resize: none;
+}
+
+/* Targeting the submit button by ID */
+#contact-submit-button {
+    
+    background-color: #007bff;  /* Blue background */
+    color: white;  /* White text */
+    border: 1px solid #ccc;  /* Light border */
+    padding: 10px;
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Pointer cursor for better UX */
+    box-sizing: border-box;  /* Ensure padding doesn't affect width */
+}
+
+#contact-submit-button:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+}
+
+
   @media screen and (max-width: 768px) {
     .about-me-div {
         flex-direction: column;

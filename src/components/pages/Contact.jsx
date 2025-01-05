@@ -111,10 +111,10 @@ function Contact() {
                       name="message"
                       onChange={handleInputChange}
                       placeholder ="Feel free to write me a message here."
-                      rows="10"
+                      rows="5"
                   />
               </div>
-            <button type="submit">Submit</button>
+            <button id='contact-submit-button' type="submit">Submit</button>
             {errorMessage && (
             <div className="error-container">
               <p className="error-text">{errorMessage}</p>
