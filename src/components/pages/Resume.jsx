@@ -76,7 +76,7 @@ function Resume() {
             id: 3,
             date: 'Expected graduation September 2024',
             name: 'High School Diploma',
-            school: 'Chaminade-Madonna College Prepatory, Hollywood, FL, US'
+            school: 'Chaminade-Madonna College Preparatory, Hollywood, FL, US'
         }
     ]
 

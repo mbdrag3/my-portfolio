@@ -19,7 +19,7 @@ function Projects() {
             githubLink: 'https://github.com/Wanipopota/project-1-game',
             websiteLink: 'https://wanipopota.github.io/project-1-game/',
             title: 'Joke Games',
-            description: 'A place to see popular games and laugh at a ton of jokes!'
+            description: 'A place to review popular games and enjoy a laugh!'
         },
         {
             id: 2,
@@ -51,7 +51,7 @@ function Projects() {
             githubLink: 'https://github.com/mbdrag3/employee-tracker',
             websiteLink: '',
             title: 'Employee Tracker',
-            description: "Created a node application to be ran in the terminal that will manage an employer's employees"
+            description: "Created a node application which runs in the terminal that is designed to manage employee data."
         },
         {
             id: 6,
