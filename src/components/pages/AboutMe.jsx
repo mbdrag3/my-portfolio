@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import image1 from '../../assets/me.jpg';  // Your original image
-import image2 from '../../assets/M&Y.jpg';
-import image3 from '../../assets/M&Y2.jpg';
-import image4 from '../../assets/Me-BB.jpg';
-import image5 from '../../assets/Me-Snowboard.jpg';
+import image1 from '../../assets/me-re.jpg';  // Your original image
+import image2 from '../../assets/M&Y-re.jpg';
+import image3 from '../../assets/M&Y2-re.jpg';
+import image4 from '../../assets/Me-BB-re.jpg';
+import image5 from '../../assets/Me-Snowboard-re.jpg';
 import '../../styles/style.css';
 
 function AboutMe() {
