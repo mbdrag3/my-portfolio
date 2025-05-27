@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe, faNetworkWired } from '@fortawesome/free-solid-svg-icons';
 import aedventuresMap from '../../assets/aedventures-map.png'
+import weddingsite from '../../assets/wedding-site-IMG.png'
 
 function Projects() {
     const projectData = [
@@ -68,6 +69,14 @@ function Projects() {
             websiteLink: 'https://mbdrag3.github.io/aedventures-map/',
             title: 'Sales map',
             description: 'Integrated a map API in order to display sales across the state of Ohio.'
+        },
+        {
+            id: 8,
+            image: weddingsite,
+            githubLink: 'https://github.com/mbdrag3/wedding-full',
+            websiteLink: 'https://www.foreverthedrags.com/',
+            title: 'Wedding Website',
+            description: 'Created a wedding website entirely from scratch. Connected to a backend to handle RSVP submissions.'
         }
     ];
 

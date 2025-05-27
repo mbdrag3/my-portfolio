@@ -7,6 +7,7 @@ function ErrorPage() {
             <h1>Page Not Available</h1>
             <p>Sorry, the page you are trying to visit is not available yet. Please check back later!</p>
         </div>
+        
     );
 }
 
