@@ -115,6 +115,9 @@ function Resume() {
                         <li>Back End Development | Node.js • Express.js • ReactJS • SQL • Handlebars.js • Sequelize • MongoDB</li>
                         <li>NetSuite</li>
                         <li>WooCommerce</li>
+                        <li>Magento</li>
+                        <li>Shift4</li>
+                        <li>Figma</li>
                         <li>Hubspot</li>
                         <li>Software | Acrobat • Dreamweaver • Github • Photoshop • VS Code • Trello</li>
                         <li>Microsoft Office</li>
