@@ -6,7 +6,22 @@ function Resume() {
     const experienceData = [
         {
             id: 1,
-            date: 'April 2023 - Present',
+            date: 'August 2025 - Present',
+            title: 'eCommerce DevOps Engineer',
+            company: 'Sarnova',
+            responsibilities: [
+                'Manage and support multiple eCommerce platforms (WooCommerce, Magento, Shift4), ensuring site stability, accurate product data, and seamless user experiences across all storefronts.',
+                'Collaborate with designers and stakeholders to implement frontend components (HTML, CSS, JavaScript), including full homepage redesigns and revenue-driving landing pages.',
+                'Develop and maintain custom PHP applications and features to extend platform functionality, enhance usability, and streamline internal operations.',
+                'Integrate and optimize third-party tools and services, enhancing out-of-the-box capabilities and improving overall system performance.',
+                'Utilize GitHub for version control and collaborative development, ensuring clean deployment processes and efficient code reviews.',
+                'Work with tools such as VS Code, phpMyAdmin (SQL), Trello, Jira, and Figma to support end-to-end project delivery, from planning to deployment.',
+                'Monitor platform performance and implement continuous updates to improve stability, user experience, and security compliance.'
+            ]
+        },
+        {
+            id: 2,
+            date: 'April 2023 - August 2025',
             title: 'Marketing, Technology and Operations Specialist',
             company: 'One Beat Medical, Miramar, FL',
             responsibilities: [
@@ -20,7 +35,7 @@ function Resume() {
             ]
         },
         {
-            id: 2,
+            id: 3,
             date: 'May 2019 - April 2023',
             title: 'Biomedical Engineer',
             company: 'One Beat Medical, Miramar, FL',
@@ -34,7 +49,7 @@ function Resume() {
             ]
         },
         {
-            id: 3,
+            id: 4,
             date: 'August 2018 - January 2019',
             title: 'Mechanical Engineering Intern',
             company: 'Arconic, Niles, OH',
@@ -47,7 +62,7 @@ function Resume() {
             ]
         },
         {
-            id: 4,
+            id: 5,
             date: 'May 2016 - August 2016',
             title: 'Warehouse Associate',
             company: 'One Beat Medical, Miramar, FL',
@@ -153,7 +168,7 @@ function Resume() {
             </div>
             <div className='resume-footer'>
                 <h1>Click the button here to dowload my resume</h1>
-                <a href="/Michael_Drag_Resume_PDF.pdf" download>
+                <a href="/Michael_Drag_Resume_sept_2025.pdf" download>
                     <button>Download Resume</button>
                 </a>
             </div>
