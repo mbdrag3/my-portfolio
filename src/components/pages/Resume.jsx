@@ -11,6 +11,7 @@ function Resume() {
             company: 'Sarnova',
             responsibilities: [
                 'Manage and support multiple eCommerce platforms (WooCommerce, Magento, Shift4), ensuring site stability, accurate product data, and seamless user experiences across all storefronts.',
+                'Design and implement custom system integrations and automation workflows to connect internal platforms, third-party services, and APIs, improving operational efficiency and data consistency across systems',
                 'Collaborate with designers and stakeholders to implement frontend components (HTML, CSS, JavaScript), including full homepage redesigns and revenue-driving landing pages.',
                 'Develop and maintain custom PHP applications and features to extend platform functionality, enhance usability, and streamline internal operations.',
                 'Integrate and optimize third-party tools and services, enhancing out-of-the-box capabilities and improving overall system performance.',
@@ -105,16 +106,18 @@ function Resume() {
                     <ul>
                         <li>(954) 907-2449</li>
                         <li>mbdrag3@gmail.com</li>
-                        <li>Fort Lauderdale, FL</li>
+                        <li>Jacksonville, FL</li>
                     </ul>
                     <h3>Skills</h3>
                     <ul>
                         <li>Front End Development | HTML •
                         CSS • JavaScript • Bootstrap •
                         Materialize</li>
-                        <li>Back End Development | Node.js • Express.js • ReactJS • SQL • Handlebars.js • Sequelize • MongoDB</li>
+                        <li>Back End Development | Python • Node.js • Express.js • ReactJS • SQL • Handlebars.js • Sequelize • MongoDB</li>
+                        <li>Scripting | Bash • Powershell</li>
                         <li>NetSuite</li>
                         <li>WooCommerce</li>
+                        <li>AWS</li>
                         <li>Magento</li>
                         <li>Shift4</li>
                         <li>Figma</li>
