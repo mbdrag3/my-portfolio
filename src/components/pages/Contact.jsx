@@ -46,35 +46,33 @@ function Contact() {
 
     const handleFormSubmit = async (e) => {
       e.preventDefault();
-    
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
-      console.log(backendUrl);
-    
+
       try {
-        const response = await fetch(`${backendUrl}/send`, {
+        const response = await fetch('/api/send', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({ email, fullName, message }),
         });
-    
+
+        const data = await response.json();
+
         if (response.ok) {
           setModalfullName(fullName);
           setIsModalOpen(true);
           setfullName('');
           setMessage('');
           setEmail('');
+          setErrorMessage('');
         } else {
-          setErrorMessage('Failed to send message. Please try again.');
+          setErrorMessage(data.error || 'Failed to send message. Please try again.');
         }
       } catch (error) {
         console.error('Error sending message:', error);
         setErrorMessage('Failed to send message. Please try again.');
       }
     };
-    
-      
 
       const closeModal = () => {
         setIsModalOpen(false);
