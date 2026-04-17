@@ -10,11 +10,11 @@ function Resume() {
             title: 'eCommerce DevOps Engineer',
             company: 'Sarnova',
             responsibilities: [
-                'Manage and support multiple eCommerce platforms (WooCommerce, Magento, Shift4), ensuring site stability, accurate product data, and seamless user experiences across all storefronts.',
+                'Manage and support multiple eCommerce platforms (WooCommerce, Magento, Shift4), ensuring site stability, accurate product data, and seamless user experiences across all storefronts',
                 'Design and implement custom system integrations and automation workflows to connect internal platforms, third-party services, and APIs, improving operational efficiency and data consistency across systems.',
                 'Collaborate with designers and stakeholders to implement frontend components (HTML, CSS, JavaScript), including full homepage redesigns and revenue-driving landing pages.',
                 'Develop and maintain custom PHP applications and features to extend platform functionality, enhance usability, and streamline internal operations.',
-                'Integrate and optimize third-party tools and services, enhancing out-of-the-box capabilities and improving overall system performance.',
+                'Administer AWS infrastructure and serverless solutions, including EC2 and Lambda, to support application hosting, implement custom business logic, automate workflows, and improve the scalability and reliability of eCommerce systems',
                 'Utilize GitHub for version control and collaborative development, ensuring clean deployment processes and efficient code reviews.',
                 'Work with tools such as VS Code, phpMyAdmin (SQL), Trello, Jira, and Figma to support end-to-end project delivery, from planning to deployment.',
                 'Monitor platform performance and implement continuous updates to improve stability, user experience, and security compliance.'
@@ -62,38 +62,44 @@ function Resume() {
                 'Identified and debugged issues using appropriate testing techniques.',
             ]
         },
-        {
-            id: 5,
-            date: 'May 2016 - August 2016',
-            title: 'Warehouse Associate',
-            company: 'One Beat Medical, Miramar, FL',
-            responsibilities: [
-                'Processed orders for shipment throughout the United States for a large AED wholesale distributor',
-                'Received inventory from manufacturers',
-                'Invoiced orders for customers',
-            ]
-        }
+        // {
+        //     id: 5,
+        //     date: 'May 2016 - August 2016',
+        //     title: 'Warehouse Associate',
+        //     company: 'One Beat Medical, Miramar, FL',
+        //     responsibilities: [
+        //         'Processed orders for shipment throughout the United States for a large AED wholesale distributor',
+        //         'Received inventory from manufacturers',
+        //         'Invoiced orders for customers',
+        //     ]
+        // }
     ]
 
     const educationData = [
         {
             id: 1,
-            date: 'September 2024',
-            name: 'Certification in Coding Bootcamp Candidate',
-            school: 'University of Miami, Coral Gables, FL, US'
-        },
-        {
-            id: 2,
             date: 'December 2022',
             name: 'Bachelor of Science (B.S.) in Mathematics',
             school: 'Florida International University, Miami, FL, US'
         },
         {
+            id: 2,
+            date: 'September 2024',
+            name: 'Certification in Coding Bootcamp',
+            school: 'University of Miami, Coral Gables, FL, US'
+        },
+        {
             id: 3,
-            date: 'Expected graduation September 2024',
-            name: 'High School Diploma',
-            school: 'Chaminade-Madonna College Preparatory, Hollywood, FL, US'
+            date: 'January 2026',
+            name: 'AWS Cloud Institute',
+            school: 'Amazon Web Services'
         }
+        // {
+        //     id: 4,
+        //     date: 'Expected graduation September 2024',
+        //     name: 'High School Diploma',
+        //     school: 'Chaminade-Madonna College Preparatory, Hollywood, FL, US'
+        // }
     ]
 
     return (
@@ -114,24 +120,16 @@ function Resume() {
                         CSS • JavaScript • Bootstrap •
                         Materialize</li>
                         <li>Back End Development | Python • Node.js • Express.js • ReactJS • SQL • Handlebars.js • Sequelize • MongoDB</li>
-                        <li>Scripting | Bash • Powershell</li>
-                        <li>NetSuite</li>
-                        <li>WooCommerce</li>
-                        <li>AWS</li>
-                        <li>Magento</li>
-                        <li>Shift4</li>
-                        <li>Figma</li>
-                        <li>Hubspot</li>
-                        <li>Software | Acrobat • Dreamweaver • Github • Photoshop • VS Code • Trello</li>
-                        <li>Microsoft Office</li>
-                        <li>Project Management</li>
-                        <li>Technical Reporting</li>
+                        <li>Cloud Computing | AWS</li>
+                        <li>Ecommerce Platforms | WooCommerce • Magento • Shift4 • Kibo</li>
+                        <li>ERP Platforms | NetSuite</li>
+                        <li>CRM | Hubspot • Microsoft Dynamics 365</li>
                     </ul>
                 </div>
                 <div className='resume-right'>
                     <div className='objective'>
                         <h2>Objective</h2>
-                        <p>As a highly skilled and motivated professional with a strong foundation in both frontend and back-end development, I am seeking to continue my career as a software developer. With expertise in technologies such as HTML, CSS, JavaScript, Node.js, ReactJS, and SQL, along with practical experience in managing integrations and software implementations, I am eager to leverage my problem-solving abilities and technical expertise to contribute to innovative and impactful software projects. I am dedicated to continuous learning and committed to delivering efficient, scalable, and user-focused solutions.</p>
+                        <p>Dynamic and results-driven software developer with a robust foundation in front-end and back-end technologies, including HTML, CSS, JavaScript, Python, Node.js, ReactJS, and SQL. Proven expertise in managing integrations and software implementations while automating and streamlining operations to enhance efficiency and reliability. Committed to continuous learning and delivering scalable, user-focused solutions that drive innovation in software projects. Recognized for a collaborative approach, adaptability, and a strong focus on achieving impactful results in fast-paced environments.</p>
                     </div>
                     <div className='experience'>
                         <h2>Experience</h2>
@@ -165,8 +163,8 @@ function Resume() {
                         <h2>Certifications</h2>
                         <ul>
                             <li>University of Miami Coding Bootcamp</li>
-                            <li>NetSuite Suitefoundation</li>
-                            <li>CPR/AED</li>
+                            <li>NetSuite SuiteFoundation</li>
+                            <li>AWS Certified Cloud Practitioner</li>
                         </ul>
                         
                     </div>
@@ -174,7 +172,7 @@ function Resume() {
             </div>
             <div className='resume-footer'>
                 <h1>Click the button here to dowload my resume</h1>
-                <a href="/Michael_Drag_Resume_sept_2025.pdf" download>
+                <a href="/Michael_Drag_Resume_2026-04-17.pdf" download>
                     <button>Download Resume</button>
                 </a>
             </div>
