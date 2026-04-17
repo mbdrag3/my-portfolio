@@ -3,6 +3,19 @@ import '../../styles/resume.css';
 
 function Resume() {
 
+    useEffect(() => {
+        const existingScript = document.querySelector(
+            'script[src="https://cdn.credly.com/assets/utilities/embed.js"]'
+        );
+
+        if (!existingScript) {
+            const script = document.createElement('script');
+            script.src = 'https://cdn.credly.com/assets/utilities/embed.js';
+            script.async = true;
+            document.body.appendChild(script);
+        }
+    }, []);
+
     const experienceData = [
         {
             id: 1,
@@ -170,7 +183,12 @@ function Resume() {
                     </div>
                     <div className='badges'>
                         <h2>Badges</h2>
-                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="98881f72-1ee8-4c24-97cd-894b38498992" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <div
+                            data-iframe-width="150"
+                            data-iframe-height="270"
+                            data-share-badge-id="98881f72-1ee8-4c24-97cd-894b38498992"
+                            data-share-badge-host="https://www.credly.com"
+                        ></div>
                     </div>
                 </div>
             </div>
