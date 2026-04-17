@@ -168,6 +168,10 @@ function Resume() {
                         </ul>
                         
                     </div>
+                    <div className='badges'>
+                        <h2>Badges</h2>
+                        <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="98881f72-1ee8-4c24-97cd-894b38498992" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                    </div>
                 </div>
             </div>
             <div className='resume-footer'>
