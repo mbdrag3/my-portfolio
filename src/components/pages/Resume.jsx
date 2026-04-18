@@ -194,7 +194,7 @@ function Resume() {
             </div>
             <div className='resume-footer'>
                 <h1>Click the button here to dowload my resume</h1>
-                <a href="/Michael_Drag_Resume_2026-04-17.pdf" download>
+                <a href="/Michael_Drag_Resume_2026-04-18.pdf" download>
                     <button>Download Resume</button>
                 </a>
             </div>
