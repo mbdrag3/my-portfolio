@@ -11,11 +11,20 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGlobe, faNetworkWired } from '@fortawesome/free-solid-svg-icons';
 import aedventuresMap from '../../assets/aedventures-map.png'
 import weddingsite from '../../assets/wedding-site-IMG.png'
+import courseCaddie from '../../assets/course-caddie-screenshot.png'
 
 function Projects() {
     const projectData = [
         {
             id: 1,
+            image: courseCaddie,
+            githubLink: '',
+            websiteLink: 'https://www.coursecaddiesystem.com/',
+            title: 'Client Website',
+            description: 'Built a modern client website using Wix to showcase CourseCaddie’s products and services.'
+        },
+        {
+            id: 2,
             image: jokeGameIMG,
             githubLink: 'https://github.com/Wanipopota/project-1-game',
             websiteLink: 'https://wanipopota.github.io/project-1-game/',
@@ -23,7 +32,7 @@ function Projects() {
             description: 'A place to review popular games and enjoy a laugh!'
         },
         {
-            id: 2,
+            id: 3,
             image: digidexIMG,
             githubLink: 'https://github.com/mbdrag3/project-2',
             websiteLink: 'https://project-2-qnfz.onrender.com/',
@@ -31,7 +40,7 @@ function Projects() {
             description: 'A digital library for managing your favorite Pokémon cards. You can even start your own collection!'
         },
         {
-            id: 3,
+            id: 4,
             image: reBookedIMG,
             githubLink: 'https://github.com/mbdrag3/ReBooked',
             websiteLink: '',
@@ -39,7 +48,7 @@ function Projects() {
             description: 'A platform to sell and buy textbooks that you need for school.'
         },
         {
-            id: 4,
+            id: 5,
             image: mongoDbIMG,
             githubLink: 'https://github.com/mbdrag3/challenge-18-new?tab=readme-ov-file',
             websiteLink: '',
@@ -47,7 +56,7 @@ function Projects() {
             description: 'Build a NoSQL backend to support a social network web application'
         },
         {
-            id: 5,
+            id: 6,
             image: employeeTrackerIMG,
             githubLink: 'https://github.com/mbdrag3/employee-tracker',
             websiteLink: '',
@@ -55,7 +64,7 @@ function Projects() {
             description: "Created a node application which runs in the terminal that is designed to manage employee data."
         },
         {
-            id: 6,
+            id: 7,
             image: noteTakerIMG,
             githubLink: 'https://github.com/mbdrag3/Note-taker-11',
             websiteLink: '',
@@ -63,7 +72,7 @@ function Projects() {
             description: 'A note taker application that will keep you more organized!'
         },
         {
-            id: 7,
+            id: 8,
             image: aedventuresMap,
             githubLink: 'https://github.com/mbdrag3/aedventures-map',
             websiteLink: 'https://mbdrag3.github.io/aedventures-map/',
@@ -71,7 +80,7 @@ function Projects() {
             description: 'Integrated a map API in order to display sales across the state of Ohio.'
         },
         {
-            id: 8,
+            id: 9,
             image: weddingsite,
             githubLink: 'https://github.com/mbdrag3/wedding-full',
             websiteLink: 'https://www.foreverthedrags.com/',
@@ -95,10 +104,12 @@ function Projects() {
                         </div>
                         <div className='card-links'>
                             {/* GitHub Link */}
-                            <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={faGithub} className="icon" />
-                            </a>
-                            
+                            {project.githubLink && (
+                                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faGithub} className="icon" />
+                                </a>
+                            )}
+
                             {/* Website Link */}
                             {project.websiteLink && project.websiteLink !== 'https://placeholder' ? (
                                 <a href={project.websiteLink} target="_blank" rel="noopener noreferrer">

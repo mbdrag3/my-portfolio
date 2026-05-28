@@ -58,7 +58,7 @@
 
 /* Blurring the other cards */
 .cards:hover .card:not(:hover) {
-    filter: blur(5px); /* Apply a blur effect to non-hovered cards */
+    /* filter: blur(5px); Apply a blur effect to non-hovered cards */
     transform: scale(1); /* Ensure non-hovered cards remain at their original size */
     z-index: 0; /* Push non-hovered cards to the background */
 }
